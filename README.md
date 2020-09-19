@@ -1,2 +1,1 @@
-# code-generation-boilerplate-FE
-
+# code-generation-FE
