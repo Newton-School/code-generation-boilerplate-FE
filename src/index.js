@@ -16,7 +16,7 @@ function toCamelCase(str) {
 }
 
 function recur(obj) {
-    const ret_str = "<"
+    let ret_str = "<"
     ret_str += toTitleCase(obj.name) + " "
     if (obj.style !== undefined && Object.keys(obj.style).length > 0) {
         var stypeKeys = Object.keys(obj.style)
