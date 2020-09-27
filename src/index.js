@@ -7,7 +7,7 @@ function begin(obj) {
   str += "<" + obj.name;
 
   {
-    Object.keys(obj.style).length > 0
+    obj.style && Object.keys(obj.style).length > 0
       ? (str +=
           " style={{" +
           createstyle(obj.style).map((style) => {
@@ -18,7 +18,7 @@ function begin(obj) {
   }
 
   {
-    obj.children.length > 0
+    obj.children && obj.children.length > 0
       ? (str +=
           ">" +
           obj.children
