@@ -1,6 +1,6 @@
 function generateCodeFromObject(obj) {
   //return a code generated string
-  begin(obj);
+  return begin(obj);
 }
 function begin(obj) {
   let str = "";
