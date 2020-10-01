@@ -1,8 +1,6 @@
 function generateCodeFromObject(obj) {
   //return a code generated string
-  if (Object.keys(obj).length === 0) {
-    return "";
-  }
+
   return recurse(obj);
 }
 
